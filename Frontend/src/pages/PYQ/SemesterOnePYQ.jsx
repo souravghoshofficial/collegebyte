@@ -43,13 +43,13 @@ const SemesterOnePYQ = () => {
         </div>
         <div className='semester-body w-full grid grid-cols-1 gap-4 mt-4'>
             <div className='subject bg-transparent border text-white px-3 lg:px-4 py-3 rounded'> 
-                <div className='flex items-center justify-between'>
-                    <div onClick={toogleArrow1}>
+                <div className='flex items-center justify-between' onClick={toogleArrow1}>
+                    <div>
                         <h1 className='block lg:hidden'>Programming Fund. and OPP</h1>
                         <h1 className='hidden lg:block'>Programming Fundamentals and Object Oriented Concepts</h1>
                     </div>
                     <div>
-                        <img src={showContent1 ? upArrow : downArrow} onClick={toogleArrow1} className='w-4 h-4 hover:cursor-pointer '/>
+                        <img src={showContent1 ? upArrow : downArrow}  className='w-4 h-4 hover:cursor-pointer '/>
                     </div>
                 </div>
                 <div className={`mt-2 ${showContent1 ? "block" : "hidden"}`}>
@@ -106,12 +106,12 @@ const SemesterOnePYQ = () => {
                 </div>
             </div>
             <div className='subject bg-transparent border text-white px-3 lg:px-4 py-3 rounded'>
-                <div className='flex items-center justify-between'>
+                <div className='flex items-center justify-between' onClick={toogleArrow3}>
                     <div>
                         <h1>Management Information Systems</h1>
                     </div>
                     <div>
-                        <img src={showContent3 ? upArrow : downArrow} onClick={toogleArrow3} className='w-4 h-4 hover:cursor-pointer '/>
+                        <img src={showContent3 ? upArrow : downArrow}  className='w-4 h-4 hover:cursor-pointer '/>
                     </div>
                 </div>
                 <div className={`mt-2 ${showContent3 ? "block" : "hidden"}`}>
@@ -137,12 +137,12 @@ const SemesterOnePYQ = () => {
                 </div>
             </div>
             <div className='subject bg-transparent border text-white px-3 lg:px-4 py-3 rounded'>
-                <div className='flex items-center justify-between'>
+                <div className='flex items-center justify-between' onClick={toogleArrow4}>
                     <div>
                         <h1>Digital Systems</h1>
                     </div>
                     <div>
-                        <img src={showContent4 ? upArrow : downArrow} onClick={toogleArrow4} className='w-4 h-4 hover:cursor-pointer '/>
+                        <img src={showContent4 ? upArrow : downArrow} className='w-4 h-4 hover:cursor-pointer '/>
                     </div>
                 </div>
                 <div className={`mt-2 ${showContent4 ? "block" : "hidden"}`}>
