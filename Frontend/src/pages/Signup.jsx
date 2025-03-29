@@ -130,7 +130,7 @@ const Signup = () => {
             <img
               id="eye"
               src={showPassword ? eyeOpen : eyeClosed}
-              className="absolute w-5 h-5 top-3 right-2 cursor-pointer"
+              className={`absolute w-5 h-5 top-3 right-2 cursor-pointer ${showEyeIcon ? "block" : "hidden"}`}
               onClick={togglePassword}
               alt={showPassword ? "Hide password" : "Show password"}
             />
@@ -140,6 +140,7 @@ const Signup = () => {
               {passwordErrors.map((error, index) => (
                 <li key={index}>{error}</li>
               ))}
+
             </ul>
           )}
           {error && <p className="text-red-500 text-sm">{error}</p>}

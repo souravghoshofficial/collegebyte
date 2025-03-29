@@ -43,7 +43,7 @@ const SemesterOnePYQ = () => {
         </div>
         <div className='semester-body w-full grid grid-cols-1 gap-4 mt-4'>
             <div className='subject bg-transparent border text-white px-3 lg:px-4 py-3 rounded'> 
-                <div className='flex items-center justify-between' onClick={toogleArrow1}>
+                <div className='cursor-pointer flex items-center justify-between' onClick={toogleArrow1}>
                     <div>
                         <h1 className='block lg:hidden'>Programming Fund. and OPP</h1>
                         <h1 className='hidden lg:block'>Programming Fundamentals and Object Oriented Concepts</h1>
@@ -75,7 +75,7 @@ const SemesterOnePYQ = () => {
                 </div>
             </div>
             <div className='subject bg-transparent border text-white px-3 lg:px-4 py-3 rounded'>
-                <div className='flex items-center justify-between'>
+                <div className='cursor-pointer flex items-center justify-between'>
                     <div>
                         <h1>Mathematical Foundations</h1>
                     </div>
@@ -106,7 +106,7 @@ const SemesterOnePYQ = () => {
                 </div>
             </div>
             <div className='subject bg-transparent border text-white px-3 lg:px-4 py-3 rounded'>
-                <div className='flex items-center justify-between' onClick={toogleArrow3}>
+                <div className='cursor-pointer flex items-center justify-between' onClick={toogleArrow3}>
                     <div>
                         <h1>Management Information Systems</h1>
                     </div>
@@ -137,7 +137,7 @@ const SemesterOnePYQ = () => {
                 </div>
             </div>
             <div className='subject bg-transparent border text-white px-3 lg:px-4 py-3 rounded'>
-                <div className='flex items-center justify-between' onClick={toogleArrow4}>
+                <div className='cursor-pointer flex items-center justify-between' onClick={toogleArrow4}>
                     <div>
                         <h1>Digital Systems</h1>
                     </div>
@@ -168,7 +168,7 @@ const SemesterOnePYQ = () => {
                 </div>
             </div>
             <div className='subject bg-transparent border text-white px-3 lg:px-4 py-3 rounded'>
-                <div className='flex items-center justify-between'>
+                <div className='cursor-pointer flex items-center justify-between' onClick={toogleArrow5}>
                     <div>
                         <h1>Graph Theory and Combinatorics</h1>
                     </div>
